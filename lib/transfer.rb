@@ -28,7 +28,7 @@ class Transfer
   end
   end
   def reverse_transfer
-   if @status == "Trasactions rejected. Please check your account balance"
+   if @status == "Trasactions rejected. Please check your account balance."
      @sender.deposit( @amount ) 
      @receiver.deposit( @amount * -1)
     @status = "reversed"
